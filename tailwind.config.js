@@ -9,6 +9,9 @@ module.exports = {
         buttonColor: "#618DFF",
         homePink: "#F8E9D8",
       },
+      backgroundImage: {
+        inCategory: "url('/src/assets/imgs/category.svg')",
+      },
     },
   },
   plugins: [],
