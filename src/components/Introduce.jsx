@@ -1,5 +1,9 @@
 import React from "react";
-
+import intro1 from "../assets/imgs/intro-1.png";
+import intro2 from "../assets/imgs/intro-2.png";
+import intro3 from "../assets/imgs/intro-3.png";
+import intro4 from "../assets/imgs/intro-4.png";
+import intro5 from "../assets/imgs/intro-5.png";
 const Introduce = () => {
   return (
     <>
@@ -16,7 +20,7 @@ const Introduce = () => {
             tốt nhất luôn được khách hàng tin tưởng sẽ là điểm đến lý tưởng và
             tuyệt vời dành cho vật nuôi.
           </p>
-          <div className="flex mt-[60px] gap-5">
+          <div className="flex mt-[60px] gap-5 mb-[130px]">
             <button className="bg-[#F04F3C] w-[183px] h-[60px] rounded-[60px] text-white text-[20px] font-bold">
               Khuyến mãi
             </button>
@@ -25,7 +29,43 @@ const Introduce = () => {
             </button>
           </div>
         </div>
-        <div>ảnh bên phải</div>
+        <div className="relative w-[800px] ">
+          <img
+            src={intro1}
+            width={567}
+            height={567}
+            alt="introduce 1"
+            className="absolute top-[50px] right-[50px] "
+          />
+          <img
+            src={intro5}
+            width={90}
+            height={90}
+            alt="introduce 5"
+            className="absolute top-[539px] right-[524px] "
+          />
+          <img
+            src={intro4}
+            width={140}
+            height={140}
+            alt="introduce 4"
+            className="absolute top-[617px] right-[367px] "
+          />
+          <img
+            src={intro3}
+            width={218}
+            height={218}
+            alt="introduce 3"
+            className="absolute top-[308px] right-[549px] "
+          />
+          <img
+            src={intro2}
+            width={323}
+            height={323}
+            alt="introduce 2"
+            className="absolute top-[407px] right-[27px] "
+          />
+        </div>
       </div>
     </>
   );
