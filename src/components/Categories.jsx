@@ -1,9 +1,11 @@
 import React from "react";
 import { catProducts, cats, dogProducts, dogs } from "../utils/category";
+import path from "../utils/path";
+import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <>
-      <div className="absolute top-[110%] left-[10%] flex p-[35px] rounded-lg bg-white gap-8 before:left-[168px] before:absolute before:border-y-[20px] before:border-x-[20px] before:border-solid before:border-t-transparent before:border-b-white before:border-x-transparent before:top-[-30px]">
+      <div className="absolute z-20 top-[110%] left-[10%] flex p-[35px] rounded-lg bg-white gap-8 before:left-[168px] before:absolute before:border-y-[20px] before:border-x-[20px] before:border-solid before:border-t-transparent before:border-b-white before:border-x-transparent before:top-[-30px]">
         <div className="flex gap-3">
           <div className="w-[172px] flex flex-col">
             <span className="text-[14px] font-bold mb-[15px]">
@@ -62,9 +64,9 @@ const Categories = () => {
 
         <div className="bg-inCategory w-[275px] bg-center bg-cover relative px-[25px] ">
           <div className="absolute top-40 flex flex-col gap-[15px]">
-            <button className="w-[73px] h-[25px] bg-[#FF4F52] text-xs font-semibold text-white rounded">
-              Khuyến mãi
-            </button>
+            <span className="w-[73px] h-[25px] bg-[#FF4F52] text-xs font-semibold text-white rounded flex items-center justify-center">
+              <Link to={path.PROMOTION}>Khuyến mãi</Link>
+            </span>
             <span className="text-white font-bold text-[25px] w-[170px]">
               Các sản phẩm thức ăn
             </span>

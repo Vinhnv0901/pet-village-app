@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import path from "../utils/path";
 import Logo from "../assets/imgs/Logo.png";
@@ -12,12 +12,15 @@ const Header = () => {
   const handleCategories = () => {
     setIsCategories(!isCategories);
   };
+  // useEffect(() => {
+  //   setIsCategories(!isCategories);
+  // });
 
   return (
     <header className="w-full relative">
       <div className="flex h-[120px] items-center justify-between">
         <div className="flex items-center ml-[75px]">
-          <Link to={path.HOME} className="mr-[38px] ">
+          <Link to={path.HOME} className="mr-[38px]">
             <img src={Logo} width={122} height={39} alt="Village logo" />
           </Link>
 

@@ -2,7 +2,14 @@ import { UseSelector, useDispatch, useSelector } from "react-redux"; //UseSelect
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import appReducer from "./store/reducers/appReducer";
-import { Home, Public, Login } from "./containers/public";
+import {
+  Home,
+  Public,
+  Login,
+  DogProduct,
+  CatProduct,
+  Promotion,
+} from "./containers/public";
 import path from "./utils/path";
 function App() {
   return (
@@ -12,6 +19,9 @@ function App() {
           <Route path={path.PUBLIC} element={<Public />}>
             <Route path={path.HOME} element={<Home />} />
             <Route path={path.LOGIN} element={<Login />} />
+            <Route path={path.DOG} element={<DogProduct />} />
+            <Route path={path.CAT} element={<CatProduct />} />
+            <Route path={path.PROMOTION} element={<Promotion />} />
             <Route path={path.STAR} element={<Home />} />
           </Route>
         </Routes>
