@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Introduce = () => {
   return (
     <>
-      <div>
+      <div className="mb-[45px]">
         <div className="flex w-full bg-homePink justify-between mb-3">
           <div className="flex flex-col ml-[100px] mt-[140px] w-[526px]">
             <span className="text-[50px] font-extrabold">
@@ -76,10 +76,22 @@ const Introduce = () => {
         </div>
         <div className="flex justify-between mx-3">
           <Link to={path.DOG}>
-            <img src={introDog} width={720} height={258} alt="dog" />
+            <img
+              src={introDog}
+              width={720}
+              height={258}
+              alt="dog"
+              className="shadowItem"
+            />
           </Link>
           <Link to={path.CAT}>
-            <img src={introCat} width={720} height={258} alt="Cat" />
+            <img
+              src={introCat}
+              width={720}
+              height={258}
+              alt="Cat"
+              className="shadowItem"
+            />
           </Link>
         </div>
       </div>

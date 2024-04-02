@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Introduce } from "../../components";
-import * as apis from "../../apis";
+import { Introduce, Items } from "../../components";
+import { UseSelector, useSelector } from "react-redux";
 const Home = () => {
   // useEffect(() => {
   //   const fetchDataHome = async () => {
@@ -9,9 +9,13 @@ const Home = () => {
   //   };
   //   fetchDataHome();
   // }, []);
+
+  // const { products } = useSelector((state) => state.app);
+
   return (
     <>
       <Introduce />
+      <Items />
     </>
   );
 };

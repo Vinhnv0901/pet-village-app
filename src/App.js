@@ -1,4 +1,4 @@
-import { UseSelector, useDispatch, useSelector } from "react-redux"; //UseSelector lấy dữ liệu từ redux, useDispatch đi tới redux
+import { useDispatch, useSelector } from "react-redux"; //UseSelector lấy dữ liệu từ redux, useDispatch đi tới redux
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import appReducer from "./store/reducers/appReducer";
@@ -11,7 +11,15 @@ import {
   Promotion,
 } from "./containers/public";
 import path from "./utils/path";
+import * as actions from "./store/actions";
+import { useEffect } from "react";
+
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(actions.getProducts());
+  }, []);
+
   return (
     <>
       <div>
