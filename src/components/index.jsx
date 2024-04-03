@@ -4,3 +4,6 @@ export { default as Footer } from "./Footer";
 export { default as Categories } from "./Categories";
 export { default as Items } from "./Items";
 export { default as Card } from "./Card";
+export { default as Course } from "./Course";
+export { default as Knowledge } from "./Knowledge";
+export { default as RegisterBottom } from "./RegisterBottom";

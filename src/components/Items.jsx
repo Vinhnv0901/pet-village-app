@@ -9,7 +9,7 @@ const Items = () => {
     dispatch(actions.getProducts());
   }, []);
   const { products } = useSelector((state) => state.app);
-
+  console.log(products);
   return (
     <div className="px-12">
       <div className="flex justify-between items-center mb-[50px]">
@@ -24,11 +24,12 @@ const Items = () => {
         {products.map((item) => {
           return (
             <Card
-              image={item.image}
-              name={item.name}
-              bought={item.bought}
-              price={item.price}
-              discount={item.discount}
+              key={item?._id}
+              image={item?.image}
+              name={item?.name}
+              bought={item?.bought}
+              price={item?.price}
+              discount={item?.discount}
             />
           );
         })}

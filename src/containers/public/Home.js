@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
-import { Introduce, Items } from "../../components";
+import {
+  Course,
+  Introduce,
+  Items,
+  Knowledge,
+  RegisterBottom,
+} from "../../components";
 import { UseSelector, useSelector } from "react-redux";
+
 const Home = () => {
   // useEffect(() => {
   //   const fetchDataHome = async () => {
@@ -16,6 +23,9 @@ const Home = () => {
     <>
       <Introduce />
       <Items />
+      <Course />
+      <Knowledge />
+      <RegisterBottom />
     </>
   );
 };

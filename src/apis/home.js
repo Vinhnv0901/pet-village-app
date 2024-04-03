@@ -6,6 +6,7 @@ export const getProducts = () =>
       const response = await axios({
         url: "/api/products",
         method: "get",
+        //params: {id: id} chuyền tham số
       });
       resolve(response);
     } catch (error) {
