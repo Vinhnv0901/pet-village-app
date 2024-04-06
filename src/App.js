@@ -15,10 +15,10 @@ import * as actions from "./store/actions";
 import { useEffect } from "react";
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(actions.getProducts());
-  }, []);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(actions.getProducts());
+  // }, []);
 
   return (
     <>

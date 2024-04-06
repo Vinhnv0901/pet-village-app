@@ -7,3 +7,4 @@ export { default as Card } from "./Card";
 export { default as Course } from "./Course";
 export { default as Knowledge } from "./Knowledge";
 export { default as RegisterBottom } from "./RegisterBottom";
+export { default as PaperCard } from "./PaperCard";

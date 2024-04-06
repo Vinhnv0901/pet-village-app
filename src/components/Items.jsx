@@ -3,13 +3,14 @@ import Card from "./Card";
 import { useDispatch } from "react-redux";
 import * as actions from "../store/actions";
 import { UseSelector, useSelector } from "react-redux";
+
 const Items = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(actions.getProducts());
   }, []);
   const { products } = useSelector((state) => state.app);
-  console.log(products);
+
   return (
     <div className="px-12">
       <div className="flex justify-between items-center mb-[50px]">
@@ -21,7 +22,7 @@ const Items = () => {
         </span>
       </div>
       <div className="grid grid-cols-4 gap-x-10 gap-y-[50px]">
-        {products.map((item) => {
+        {products.slice(0, 8).map((item) => {
           return (
             <Card
               key={item?._id}

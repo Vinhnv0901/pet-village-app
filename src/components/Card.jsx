@@ -13,7 +13,7 @@ const Card = ({ image, name, bought, price, discount }) => {
         className="object-cover rounded-[10px]"
       />
       <p className="text-[#2E2437] font-medium text-2xl mt-[18px] text-justify h-[96px]">
-        {name}
+        {name.length >= 72 ? `${name?.slice(0, 72)}...` : name}
       </p>
       <div className="mt-5 flex w-full">
         <div className="flex items-center">
