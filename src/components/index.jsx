@@ -8,3 +8,4 @@ export { default as Course } from "./Course";
 export { default as Knowledge } from "./Knowledge";
 export { default as RegisterBottom } from "./RegisterBottom";
 export { default as PaperCard } from "./PaperCard";
+export { default as CategoryInProductPage } from "./CategoryInProductPage";

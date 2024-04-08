@@ -4,6 +4,7 @@
 @layer base {
   body {
     @apply font-sans;
+    @apply items-start;
   }
   h4 {
     @apply text-2xl;

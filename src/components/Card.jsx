@@ -5,7 +5,7 @@ import star from "../assets/imgs/star.png";
 const Card = ({ image, name, bought, price, discount }) => {
   let newPrice = price - (price / 100) * discount;
   return (
-    <div className="flex flex-col px-1 cursor-pointer round items-center rounded-[10px] shadowItem">
+    <div className="flex flex-col px-1 cursor-pointer round items-center rounded-[10px] shadowItem overflow-hidden w-[308px]">
       <img
         src={image}
         height={300}
