@@ -18,7 +18,9 @@ const DogProduct = () => {
       <div className="mx-[100px] my-[50px]">
         <p className="text-[40px] font-extrabold mb-[46px]">Sản phẩm cho chó</p>
         <div className="flex justify-between">
-          <CategoryInProductPage />
+          <div>
+            <CategoryInProductPage />
+          </div>
           <div className="grid grid-cols-3 gap-x-[20px] gap-y-[30px]">
             {products.slice(0, 8).map((item) => {
               return (

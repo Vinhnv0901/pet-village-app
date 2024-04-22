@@ -5,6 +5,7 @@ import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import testPersistReducer from "./testPersistReducer";
+import getFooterHight from "./interfaceReducer";
 
 const commonConfig = {
   storage: storage,
@@ -20,6 +21,7 @@ const testPersisConfig = {
 const rootReducer = combineReducers({
   app: appReducer,
   paper: newsReducer,
+  interf: getFooterHight,
   testPersis: persistReducer(testPersisConfig, testPersistReducer),
 });
 

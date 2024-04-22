@@ -28,9 +28,11 @@ const Introduce = () => {
               tưởng và tuyệt vời dành cho vật nuôi.
             </p>
             <div className="flex mt-[60px] gap-5 mb-[130px]">
-              <span className="bg-[#F04F3C] w-[183px] h-[60px] rounded-[60px] text-white text-[20px] font-bold flex justify-center items-center">
-                <Link to={path.PROMOTION}>Khuyến mãi</Link>
-              </span>
+              <Link to={path.PROMOTION}>
+                <span className="bg-[#F04F3C] w-[183px] h-[60px] rounded-[60px] text-white text-[20px] font-bold flex justify-center items-center">
+                  Khuyến mãi
+                </span>
+              </Link>
               <button className="w-[183px] h-[60px] rounded-[60px] text-[#F04F3C] text-[20px] font-bold border-[1px] border-[#F04F3C]">
                 Dịch vụ
               </button>

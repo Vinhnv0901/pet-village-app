@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import product_heading from "../../assets/imgs/product_heading.png";
 import { useDispatch } from "react-redux";
 import * as actions from "../../store/actions";
@@ -19,7 +19,10 @@ const Promotion = () => {
           Sản phẩm khuyến mãi
         </p>
         <div className="flex justify-between">
-          <CategoryInProductPage />
+          <div>
+            <CategoryInProductPage />
+          </div>
+
           <div className="grid grid-cols-3 gap-x-[20px] gap-y-[30px]">
             {products.slice(0, 8).map((item) => {
               return (
